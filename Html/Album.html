@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div style="width: 400px; border: 2px solid black; padding: 10px; margin: 20px auto;">
+        <Marquee behavior="alternate" direction="left" style="color: red; font-weight: bold; font-size: 20px;">
+            Nhạc Online
+        </Marquee>
+        <div>
+            <p style="margin: 10px 0;">
+                <a href="/Sounds/Phép Màu.mp3" onclick="playSong(event, this)" style="text-decoration: none; color: blue;">Phép màu</a>
+            </p>
+            <p style="margin: 10px 0;">
+                <a href="/Sounds/nangduoichanmay.mp3" onclick="playSong(event, this)" style="text-decoration: none; color: blue;">Nắng dưới chân mây</a>
+            </p>
+        </div>
+
+        <audio id="player" controls autoplay style="width: 100%; margin-top: 15px;">
+            <source src="" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ nghe nhạc.
+        </audio>
+    </div>
+
+    <script>
+        function playSong(event, link) {
+            event.preventDefault(); // chặn mở file ngoài
+            const player = document.getElementById("player");
+            player.src = link.href; 
+            player.play();
+        }
+    </script>
+    </div>
+</body>
+</html>
