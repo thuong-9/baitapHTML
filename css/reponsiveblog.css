@@ -1,29 +1,87 @@
 @media (max-width: 768px) {
-    nav {
-        display: none;
-        width: 100%;
-    }
-    nav.active {
-        display: block;
-    }
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-    nav ul li {
-        margin: 10px 0;
-        text-align: left;
-        justify-content: center;
-        display: flex;
-        border-bottom: 1px solid #ffffff94;
-        padding: 0 0 10px;
-        font-size: larger;
+      header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
 
-    }
-    .menu-toggle {
-        display: flex;
-    }
+  /* Avatar + Tên co gọn */
+  .profile {
+    width: 100%;
+  }
+  .profile img {
+    width: 45px;
+    height: 45px;
+  }
+  .profile span {
+    font-size: 0.95rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+
+  .menu-toggle div {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Ẩn menu mặc định */
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  /* Khi bấm nút toggle -> hiển thị menu */
+  nav.active {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Danh sách menu chuyển sang dạng dọc */
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 12px 0;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+  }
+
     .footer-container {
       flex-direction: column;
       align-items: center;
@@ -33,10 +91,89 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 10px 20px;
-        }
-
-    .footer-contact img {
-      width: 35px;
-      height: 35px;
     }
+
+    .footer-container .profile {
+        justify-content: center
+    }
+    .footer-contact img {
+        width: 35px;
+        height: 35px;
+    }
+    .main-container {
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        border-left: 4px solid #ffc2d1;
+        padding-left: 8px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-content ul {
+        padding-left: 15px;
+    }
+
+    .goals {
+        flex-direction: column;
+    }
+    .goals div {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery img {
+        height: 180px;
+    }
+
+    .skills li {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .project {
+        padding: 12px;
+    }
+    .project h3 {
+        font-size: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+
+    textarea {
+        height: 80px;
+        font-size: 0.9rem;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    .goals div {
+        padding: 0;
+    }
+
 }

@@ -42,13 +42,13 @@
             <h2>🧩 I. THÔNG TIN CÁ NHÂN</h2>
             <div class="info-content">
                 <img src="/Images/avt1.jpg" alt="Nguyễn Thị Hoài Thương" class="profile-pic">
-                <ul>
-                    <li><strong>Họ và tên:</strong> Nguyễn Thị Hoài Thương</li>
-                    <li><strong>Ngày sinh:</strong> 09/09/2004</li>
-                    <li><strong>Quê quán:</strong> Thanh Chương</li>
-                    <li><strong>Hiện đang học tại:</strong> Trường Đại học Vinh</li>
-                    <li><strong>Sở thích:</strong> Lập trình, đọc sách, nghe nhạc, chụp ảnh, và viết blog</li>
-                    <li><strong>Tính cách:</strong> Nhiệt huyết, hòa đồng, kiên trì và luôn cố gắng trong mọi việc</li>
+                <ul style="list-style:none;">
+                    <li>🔹<strong>Họ và tên:</strong> Nguyễn Thị Hoài Thương</li>
+                    <li>🔹<strong>Ngày sinh:</strong> 09/09/2004</li>
+                    <li>🔹<strong>Quê quán:</strong> Thanh Chương</li>
+                    <li>🔹<strong>Hiện đang học tại:</strong> Trường Đại học Vinh</li>
+                    <li>🔹<strong>Sở thích:</strong> Lập trình, đọc sách, nghe nhạc, chụp ảnh, và viết blog</li>
+                    <li>🔹<strong>Tính cách:</strong> Nhiệt huyết, hòa đồng, kiên trì và luôn cố gắng trong mọi việc</li>
                 </ul>
             </div>
         </section>
@@ -89,9 +89,9 @@
         <section id="hinhanh" class="gallery-section">
             <h2>🖼️ III. BỘ SƯU TẬP HÌNH ẢNH / VIDEO</h2>
             <div class="gallery">
-                <img src="/Images/tinhoc.jpg" alt="Cuộc thi Tin học trẻ 2024">
-                <img src="/Images/stem.jpg" alt="Ngoại khóa STEM">
-                <img src="/Images/todo.jpg" alt="Sản phẩm To-Do List">
+                <img src="" alt="">
+                <img src="" alt="M">
+                <img src="" alt="">
             </div>
         </section>
 
@@ -174,5 +174,19 @@
             nav.classList.toggle('active');
         });
     </script>
+    <script>
+  // thêm hiệu ứng xuất hiện khi cuộn
+  const sections = document.querySelectorAll("section");
+  function revealOnScroll() {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(sec => {
+      const boxTop = sec.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) sec.classList.add("show");
+    });
+  }
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
 </body>
 </html>
