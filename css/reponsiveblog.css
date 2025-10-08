@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+    }
+    nav.active {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: left;
+        justify-content: center;
+        display: flex;
+        border-bottom: 1px solid #ffffff94;
+        padding: 0 0 10px;
+        font-size: larger;
+
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px 20px;
+        }
+
+    .footer-contact img {
+      width: 35px;
+      height: 35px;
+    }
+}

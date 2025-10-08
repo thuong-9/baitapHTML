@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="name">Usename: </label>
+                <input type="text" id="name" placeholder="Tên đăng nhập" required>
+            </div>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" id="pass" placeholder="Mật khẩu" required>
+            </div>
+            <div>
+                <input type="radio" id="Male" name="gener" value="nam">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="gener" value="nu">
+                <label for="Female">Female</label>
+                <input type="radio" id="Other" name="gener" value="khac">
+                <label for="Other">Other</label>
+            </div>
+            <div>
+                <select name="membership" >
+                    <option value="vang">Thành viên vàng</option>
+                    <option value="bac">Thành viên bạc</option>
+                    <option value="kc">Thành viên kim cương</option>
+                </select>
+                <input type="color" name="favcolor">
+                <input type="checkbox" id="correct" name="correct">
+                <label for="correct">Correct</label>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
